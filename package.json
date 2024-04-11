@@ -1,7 +1,7 @@
 {
   "name": "egraph-app",
   "version": "0.1.0",
-  "homepage": "https://Denisius664.github.io/my-app",
+  "homepage": "https://Denisius664.github.io/egraph",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
