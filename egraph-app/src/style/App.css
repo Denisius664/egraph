@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.providerflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.providerflow aside {
+  border-left: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fff;
+}
+
+.providerflow aside .description {
+  margin-bottom: 10px;
+}
+
+.providerflow aside .title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.providerflow aside .transform {
+  margin-bottom: 20px;
+}
+
+.providerflow .reactflow-wrapper {
+  flex-grow: 2;
+}
+
+.reactflow-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.providerflow .selectall {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .providerflow {
+      flex-direction: row-reverse;
+  }
+
+  .providerflow aside {
+      width: 50%;
+      max-width: 250px;
+      height: 500px;
+  }
+}

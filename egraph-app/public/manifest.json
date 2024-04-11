@@ -1,0 +1,25 @@
+{
+  "short_name": "Egraph",
+  "name": "",
+  "icons": [
+    {
+      "src": " ",
+      "sizes": "",
+      "type": ""
+    },
+    {
+      "src": "",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "src": "",
+      "type": "",
+      "sizes": ""
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
