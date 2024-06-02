@@ -1,12 +1,21 @@
 import { Coordinates } from "./helpers"
 
+import { generate_uuid_v4 } from '../graph/helpers';
+
 
 class Compartment extends Coordinates {
-    constructor(name, id, population, another) {
-      super();
-      this.name_ = name;
+    /**
+     * 
+     * @param {string} id - идентификатор узла
+     * @param {} comp_config - информация о компартменте: {name: , population: }
+     */
+    constructor(id, comp_config) {
+      super(comp_config.x, comp_config.y);
       this.id_ = id;
-      this.population_ = population;
+
+      this.name_ = comp_config.name;
+      this.population_ = comp_config.population;
+      this.is_started_ = false;
     }
     GetPopulation() {
       return this.population_;
@@ -17,28 +26,40 @@ class Compartment extends Coordinates {
     SetPopulationFromDiff(diff_population){
       this.population_ += diff_population;
     }
+    SetIsStarted(isStarted){
+      this.is_started_ = isStarted;
+    }
     GetName() {
       return this.name_;
     }
     GetId() {
       return this.id_;
     }
-    UpdateCompartment(name = "", id = "", population = null) {
+    GetAttr(){
+      return this.name_.slice(0,2);
+    }
+    UpdateCompartment(name = "", population = null) {
       this.population_ = population ? population : this.population_;
-      this.name_ = name === "" ? name : this.name_;
-      this.id_ = id === "" ? id : this.id_;
+      this.name_ = !(name === "") ? name : this.name_;
+      return this;
     }
 
     // iteration population - +/-
     // method: ApplyIterationPopulation
 
     toString(){
-      return {
+      let stringData = {
         id: this.id_,
         name: this.name_,
         attr: this.name_.slice(0,1),
         population: this.population_,
-      };
+        position: {
+          x: this.x_,
+          y: this.y_
+        } 
+      } 
+      if(this.is_started_){stringData.is_started = this.is_started_}
+      return stringData;
     }
   }
 
