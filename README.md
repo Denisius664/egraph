@@ -1,73 +1,65 @@
-# Getting Started with Create React App
+# ЭпиГраф
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Веб-сервис для построения компартментальных эпидемиологических моделей, их запуска и конвертации в файлы форматов: png, svg, csv, json, xml(.epigraph)
 
-## Available Scripts
+Этот репозиторий содержит:
 
-In the project directory, you can run:
+1. [Фронтенд]() составляющую, содержащая весь функционал сервиса - ReactJS
+2. [Бэкенд]() сервиса, содержащий модуль авторизации через YandexAPI и модули моделирования модели. (См. [подключение модулей]())
+3. [Доработанная библиотека Dagre]() с учетом требований отображения компартментальных моделей.
 
-### `npm start`
+## Содержание
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Проблема](#проблема)
+- [Требования](#требования)
+- [Установка](#установка)
+    - [Подключение YandexAPI](#yandex-api)
+    - [Локально](#локально)
+    - [Установка на сервер](#установка-на-сервер)
+- [Использование](#использование)
+    - [Запуск через bat](#запуск-через-bat)
+- [Сотрудничество](#сотрудничество)
+- [Лицензия](#лицензия)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Проблема
 
-### `npm test`
+...
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Требования
 
-### `npm run build`
+...
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Установка
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Подключение YandexAPI
 
-### `npm run eject`
+...
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Локально
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+...
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Установка на сервер
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+...
 
-## Learn More
+## Использование
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+...
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Запуск через bat
 
-### Code Splitting
+...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Сотрудничество
 
-### Analyzing the Bundle Size
+<a href="https://github.com/utmnindevs/egraph/graphs/contributors">
+<img src="./docs/imgs/fotor-20240516194212.png" width="40", height="40">
+<img src="./docs/imgs/fotor-20240516194112.png" width="40", height="40">
+</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Лицензия
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# egraph
-Программа для исследования пандемий
+[MIT](LICENSE) @ utmnindevs 

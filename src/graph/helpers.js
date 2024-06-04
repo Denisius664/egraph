@@ -6,6 +6,13 @@ class Coordinates {
     ComputeDistanceTo(another) {
         return Math.sqrt(Math.pow(this.x_ - another.x_, 2) + Math.pow(this.y_ - another.y_, 2));
     }
+    GetPosition(){
+        return {x: this.x_, y: this.y_}
+    }
+    UpdatePosition(position){
+        this.x_ = position?.x || this.x_;
+        this.y_ = position?.y || this.y_;
+    }
 }
 
 
