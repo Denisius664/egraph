@@ -131,6 +131,7 @@ const UpperMenu = ({ onChooseFile, e_graph, onRunModel, handleShowResults, handl
         <EditMenuDropDown className="hdr-button" name={'Правка'}/>
         <AboutMenuDropDown className="hdr-button" name={'Справка'}/>
         <StartModelDropDown className="hdr-button" name= {'Модель'}/>
+        <Register/>
         <></>
       </div>
     </div>
