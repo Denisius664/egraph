@@ -6,10 +6,12 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
+import Register from '../routes/register.jsx'
  
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const UpperMenu = ({ rfInstance, onDownloadFile, onRunModel, handleOpenExisting }) => {
   const [fileName, setFileName] = useState("Untitled");
@@ -134,6 +136,7 @@ const UpperMenu = ({ rfInstance, onDownloadFile, onRunModel, handleOpenExisting 
         <EditMenuDropDown className="hdr-button" name={'Правка'}/>
         <AboutMenuDropDown className="hdr-button" name={'Справка'}/>
         <StartModelDropDown className="hdr-button" name= {'Модель'}/>
+        <Register/>
         <></>
       </div>
     </div>
