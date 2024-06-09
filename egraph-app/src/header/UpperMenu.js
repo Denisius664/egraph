@@ -1,8 +1,15 @@
 import React, { useState, useCallback } from 'react';
 import './style_header/UpperMenu.css';
 import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+
+import Register from '../routes/register.jsx'
+ 
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import { onSaveFileAs, onEditCurrentFile, openFile, getRecentFile } from '../handlers/Save';
 
@@ -110,27 +117,26 @@ const UpperMenu = ({ onChooseFile, e_graph, onRunModel, handleShowResults, handl
         <div className="logo">
           <img src="logo.svg" alt="Logo" />
         </div>
-        <div className="content">
-          <h1
-            id='title_filename'
-            contentEditable
-            onBlur={handleFileNameChange}
-            suppressContentEditableWarning={true}
-          >
-            {fileName}
-          </h1>
-          <div className="header-buttons">
-            <button className="dark-mode-button" onClick={toggleDarkMode}>Dark Theme</button>
-            <FileMenuDropDown className="hdr-button" name={'Файл'} />
-            <EditMenuDropDown className="hdr-button" name={'Правка'} />
-            <AboutMenuDropDown className="hdr-button" name={'Справка'} />
-            <StartModelDropDown className="hdr-button" name={'Модель'} />
-            {true && <div style={{fontSize: '10px', color: 'rgba(0,0,0,0.5)'}}> Все изменения сохранены</div>}
-
-          </div>
-        </div>
+    <div className="content">
+      <h1 id='title_filename'
+        contentEditable
+        onBlur={handleFileNameChange}
+        suppressContentEditableWarning={true}
+      >
+        {fileName}
+      </h1>
+      <div className="header-buttons" >
+        <button className="dark-mode-button" onClick={toggleDarkMode}>Dark Theme</button>
+        <FileMenuDropDown className="hdr-button" name={'Файл'}/>
+        <EditMenuDropDown className="hdr-button" name={'Правка'}/>
+        <AboutMenuDropDown className="hdr-button" name={'Справка'}/>
+        <StartModelDropDown className="hdr-button" name= {'Модель'}/>
+        <Register/>
+        <></>
       </div>
     </div>
+  </div>
+</div>
   );
 };
 
