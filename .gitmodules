@@ -1,0 +1,3 @@
+[submodule "dynmod_loader"]
+	path = dynmod_loader
+	url = https://gitflic.ru/project/astrauser/dynmod_loader.git
